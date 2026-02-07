@@ -1,0 +1,7 @@
+openai
+chromadb
+python-dotenv
+gradio
+tqdm
+tenacity
+litellm

@@ -1,0 +1,58 @@
+# ------------------------------------------------
+# 🔒 Secrets & Environment (CRITICAL)
+# ------------------------------------------------
+.env
+.env.local
+.env.*
+
+# ------------------------------------------------
+# 💾 Database & Heavy Files
+# ------------------------------------------------
+# ChromaDB persistence folder (Do not push this, regenerate it locally)
+preprocessed_db/
+chroma_db/
+
+# Optional: If you don't want to upload raw PDFs
+data/markdown/raw
+data/pdfs
+
+# ------------------------------------------------
+# 🐍 Python Standard
+# ------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ------------------------------------------------
+# 📦 Virtual Environments
+# ------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+
+# ------------------------------------------------
+# 💻 IDE & System
+# ------------------------------------------------
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
