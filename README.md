@@ -1,4 +1,4 @@
-# 🇮🇳 India Travel Law Assistant (AI-Powered)
+# 🇮🇳 Travel Law Assistant (AI-Powered)
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![AI](https://img.shields.io/badge/AI-OpenAI%20GPT--4o-green)
@@ -99,7 +99,7 @@ Open your browser to the local URL (usually http://127.0.0.1:7860).
 
 ###📂 Project Structure
 
-india-travel-law-assistant/
+travel-law-assistant/
 ├── data/
 │   └── markdown/
 │       └── filtered/       # The gold-standard clean legal datasets
