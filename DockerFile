@@ -1,0 +1,21 @@
+FROM python:3.10
+
+# Create user to avoid permission issues
+RUN useradd -m -u 1000 user
+USER user
+ENV HOME=/home/user \
+    PATH=/home/user/.local/bin:$PATH
+
+WORKDIR $HOME/app
+
+# Copy files (chown ensures user owns them)
+COPY --chown=user . $HOME/app
+
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Expose the Chainlit port
+EXPOSE 7860
+
+# Run the app
+CMD ["chainlit", "run", "cl_app.py", "--port", "7860"]
